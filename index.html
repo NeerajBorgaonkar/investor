@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>इन्व्हेस्टर प्लॅटफॉर्म</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
             background-color: #f9f9f9;
+            margin: 0;
         }
         .container {
             background: white;
@@ -21,40 +26,55 @@
         }
         h1 {
             color: #333;
+            font-family: 'Teko', sans-serif; /* Teko Bold */
+            font-weight: 700;
         }
         p {
             font-size: 18px;
             color: #666;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        a:hover {
-            background: #0056b3;
+            font-family: 'Baloo 2', sans-serif; /* Baloo Font */
         }
         img {
-            width: 200px; /* Adjust the size as needed */
+            width: 150px; /* Adjust the size as needed */
             display: block;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 10px auto; /* Center image */
             border-radius: 15px; /* Rounded corners */
+        }
+
+        /* Elevated Button Style */
+        .elevated-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #fefe05; /* Yellow */
+            color: black !important;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: 'Baloo 2', sans-serif;
+            font-size: 16px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+        .elevated-button:hover {
+            background: #e5e500; /* Slightly Darker Yellow */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 <body>
 
-    <!-- Logo Image -->
-    <img src="https://raw.githubusercontent.com/NeerajBorgaonkar/investor/refs/heads/main/logo.png" alt="Investor Platform Logo" width="150">
-
     <div class="container">
+        <!-- Logo Image -->
+        <img src="https://raw.githubusercontent.com/NeerajBorgaonkar/investor/refs/heads/main/logo.png" alt="Investor Platform Logo">
+
         <h1>इन्व्हेस्टर प्लॅटफॉर्म</h1>
-        <p>आपल्या इन्व्हेस्टर प्लॅटफॉर्मच्या नवीन Android App साठी खालील लिंक वापरा:</p>
-        <a href="https://play.google.com/store/apps/details?id=com.guntavnookkatta.app" target="_blank">Android App Download</a>
+        <p>इन्व्हेस्टर प्लॅटफॉर्मचे अ‍ॅप डाऊनलोड करण्याकरिता खाली क्लिक करा</p>
+
+        <!-- Elevated Button Inside the Container -->
+        <a href="https://play.google.com/store/apps/details?id=com.guntavnookkatta.app" target="_blank" class="elevated-button">
+            Download App
+        </a>
     </div>
 
 </body>
