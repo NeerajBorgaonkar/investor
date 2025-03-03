@@ -41,7 +41,7 @@
             border-radius: 15px; /* Rounded corners */
         }
 
-        /* Elevated Button Style */
+        /* Animated Button */
         .elevated-button {
             display: inline-block;
             padding: 12px 24px;
@@ -54,11 +54,23 @@
             font-size: 16px;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease-in-out;
+            
+            /* Pulse Animation */
+            animation: pulse 1.5s infinite;
         }
+        
+        /* Hover Effects */
         .elevated-button:hover {
             background: #e5e500; /* Slightly Darker Yellow */
-            transform: translateY(-2px); /* Slight lift on hover */
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+            transform: scale(1.05); /* Slight zoom */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Keyframes for Pulse Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
@@ -71,7 +83,7 @@
         <h1>इन्व्हेस्टर प्लॅटफॉर्म</h1>
         <p>इन्व्हेस्टर प्लॅटफॉर्मचे अ‍ॅप डाऊनलोड करण्याकरिता खाली क्लिक करा</p>
 
-        <!-- Elevated Button Inside the Container -->
+        <!-- Animated Button Inside the Container -->
         <a href="https://play.google.com/store/apps/details?id=com.guntavnookkatta.app" target="_blank" class="elevated-button">
             Download App
         </a>
